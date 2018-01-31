@@ -59,6 +59,8 @@ type ServiceDest struct {
 	SrcPortAclName string
 	// Whether to verify client SSL and deny request when it is invalid
 	VerifyClientSsl bool
+	// Should be set to true, if there is a AAL enabled backend
+	SslVerifyNone bool
 	// If specified, only requests with the same agent will be forwarded to the backend.
 	UserAgent UserAgent
 	// User defined value.
